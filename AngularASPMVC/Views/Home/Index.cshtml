@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div ng-app="app">
+    <h1>All TODO list</h1>
+    <div ng-controller="ctrl">
+        <div ng-repeat="row in allTodo track by $index">
+            {{row}}
+        </div>
+
+        <div>
+            <h1>Pass complex objects to GET requests</h1>
+            <div ng-repeat="filteredRow in filteredTodo track by $index">
+                {{filteredRow}}
+            </div>
+        </div>
+    </div>
+
+</div>
